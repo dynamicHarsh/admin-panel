@@ -1,0 +1,42 @@
+
+.Card { 
+  margin-right: auto; 
+  margin-left: auto; 
+  width: 80%; 
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+  height: 250px; 
+  border-radius: 5px; 
+  backdrop-filter: blur(14px); 
+  background-color: rgba(255, 255, 255, 0.2); 
+  padding: 10px; 
+  
+  position: relative;
+} 
+.additional-info {
+
+
+  /* position: absolute; */
+  margin-bottom: 7px;
+  width: 97%;
+  padding: 3px;
+  /* top: 10px;
+  right: 10px; */
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.additional-info div{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.Upcoming{
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(245,252,63,1) 77%, rgba(251,255,38,1) 90%, rgba(193,204,40,1) 100%);
+}
+.Ongoing{
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(201,63,252,1) 77%, rgba(237,38,255,1) 90%, rgba(196,40,204,1) 100%);
+}
+.Completed{
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(74,252,63,1) 77%, rgba(38,255,44,1) 90%, rgba(40,204,75,1) 100%);
+}
+
