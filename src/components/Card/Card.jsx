@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Card.css";
-
+import DoughnutChart from "../DoughnutChart.js/DoughnutChart";
 import Chart from "react-apexcharts";
 
 class Donut extends Component {
@@ -29,26 +29,15 @@ class Donut extends Component {
   }
 }
 
-const Card=()=>{
+const Card=({labels,datasets})=>{
   return (
-    <>
-    <div className="Card">
-    <Donut/>
-    <div className="additional-info Upcoming">
-        <div>Upcoming</div>
-        <div>100</div>
-    </div>
-    <div className="additional-info Ongoing">
-        <div>Ongoing</div>
-        <div>90</div>
-    </div>
-    <div className="additional-info Completed">
-        <div>Completed</div>
-        <div>50</div>
-    </div>
+    
+    <div data-testid="cd-1" className="Card" >
+    
+    <DoughnutChart labels={labels} datasets={datasets}/>
+
     </div>
       
-    </>
     
   )
 }

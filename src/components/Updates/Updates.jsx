@@ -5,7 +5,7 @@ import { UpdatesData } from "../../Data/Data";
 const Updates = () => {
   return (
     <>
-      <div className="Completed_Activities">
+      <div data-testid="updates-1" className="Completed_Activities">
       {UpdatesData.map((update) => {
         return (
           <div className="update">
